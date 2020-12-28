@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>HTML mail-inline-style</title>
+	</head>
+	<body>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			img {
+				border: 0 none;
+				height: auto;
+				line-height: 100%;
+				outline: none;
+				text-decoration: none;
+			}
+
+			a img {
+				border: 0 none;
+			}
+
+			table,
+			td {
+				border-collapse: collapse;
+				padding: 0;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin: 0;
+			}
+
+			body {
+				font-family: sans-serif;
+			}
+
+			.container {
+				font-family: "Quicksand";
+				font-family: sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #0d9e73;
+				width: 100% !important;
+				height: 100% !important;
+				font-size: 24px;
+				line-height: 1.4;
+				-ms-text-size-adjust: 100%;
+				-webkit-text-size-adjust: 100%;
+			}
+
+			.wrapper {
+				display: block;
+				padding: 48px;
+			}
+
+			.content-item {
+				padding: 24px;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.page-behind-1,
+			.page-behind-2 {
+				font-size: 0;
+				line-height: 0;
+			}
+			.page-behind-1 table > tbody > tr > td,
+			.page-behind-2 table > tbody > tr > td {
+				display: inline-block;
+				font-size: 0;
+				padding: 0;
+				margin-bottom: 4px;
+				line-height: 0;
+				width: 100%;
+				border-top: 4px solid white;
+				border-radius: 10px 10px 0 0;
+			}
+
+			.page-behind-1 table {
+				width: 75%;
+			}
+
+			.page-behind-2 table {
+				width: 90%;
+			}
+
+			.page-content {
+				background-color: white;
+				padding: 48px 16px;
+				border-radius: 0 0 10px 10px;
+			}
+
+			h1 {
+				font-size: 48px;
+			}
+
+			.button td {
+				background-color: #fbbd1f;
+				border-radius: 16px;
+				text-decoration: none;
+			}
+			.button td a {
+				background-color: #fbbd1f;
+				border-radius: 16px;
+				text-decoration: none;
+				color: #833b20;
+				padding: 16px 24px;
+				text-decoration: none;
+				display: inline-block;
+			}
+
+			.text-logo {
+				padding-top: 96px;
+				padding-bottom: 48px;
+				color: white;
+			}
+
+			/*# sourceMappingURL=style.css.map */
+		</style>
+		<!-- Ovo tabela popunjava ceo view port -->
+		<table class="container">
+			<tbody>
+				<tr>
+					<td class="wrapper" align="center">
+						<!-- content -->
+						<table>
+							<tbody>
+								<tr>
+									<td class="content-item" align="center">
+										<img
+											src="img/Mr._Smiley_Face.svg.png"
+											alt=""
+											width="80px"
+										/>
+									</td>
+								</tr>
+								<!-- linijice iznad strnice -->
+								<tr class="page-behind-1">
+									<td align="center">
+										<table>
+											<tbody>
+												<tr>
+													<td>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="page-behind-2">
+									<td align="center">
+										<table>
+											<tbody>
+												<tr>
+													<td>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<!-- PAGE CONTENT -->
+								<tr>
+									<td align="center" class="page-content">
+										<table class="text-center">
+											<tbody>
+												<!-- header -->
+												<tr>
+													<td class="content-item"><h1>Verify Email</h1></td>
+												</tr>
+												<!-- Text -->
+												<tr>
+													<td class="content-item">Hi srdjan</td>
+												</tr>
+												<!-- Text -->
+												<tr>
+													<td class="content-item">
+														Tnx for creating account with Us <br />
+														To continue please verify your e-mail
+													</td>
+												</tr>
+												<!-- button -->
+												<tr>
+													<td class="content-item" align="center">
+														<table class="button">
+															<tr>
+																<td>
+																	<a href="">Verify your Email</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<!-- LOGO -->
+								<tr>
+									<td class="text-logo" align="center">
+										<h3>Neki nas log</h3>
+										<h5>Nasa kompanija</h5>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
